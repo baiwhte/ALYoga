@@ -22,9 +22,9 @@ Pod::Spec.new do |s|
   s.platforms = { :ios => "8.0", :tvos => "9.2" }
   s.requires_arc = true
 
-  s.source_files = 'yoga/**/*.{cpp,h}'
+  s.source_files = 'ALYoga/*.{cpp,h}'
   
-  s.module_name = 'yoga'
+  s.module_name = 'ALYoga'
   s.requires_arc = false
   s.compiler_flags = [
       '-fno-omit-frame-pointer',
