@@ -19,12 +19,14 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/baiwhte/ALYoga-0.55.3.React.git", :tag => s.version }
   #s.social_media_url = 'https://twitter.com/artsy'
 
-  s.platforms = { :ios => "8.0", :tvos => "9.2" }
+  s.platforms = { :ios => "8.0" }
   s.requires_arc = false
 
-  s.source_files = 'ALYoga/*.{cpp,h}'
+  s.public_header_files = 'ALYoga/{Yoga,YGEnums,YGMacros}.h'
+  s.source_files = 'ALYoga/**/*.{h,cpp}'
   
-  s.module_name = 'ALYoga'
+  s.module_name = 'yoga'
+
   s.compiler_flags = [
       '-fno-omit-frame-pointer',
       '-fexceptions',
@@ -33,5 +35,6 @@ Pod::Spec.new do |s|
       '-std=c++1y',
       '-fPIC'
   ]
+  
 
 end
