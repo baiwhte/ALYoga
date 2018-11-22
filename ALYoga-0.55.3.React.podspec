@@ -20,12 +20,11 @@ Pod::Spec.new do |s|
   #s.social_media_url = 'https://twitter.com/artsy'
 
   s.platforms = { :ios => "8.0", :tvos => "9.2" }
-  s.requires_arc = true
+  s.requires_arc = false
 
   s.source_files = 'ALYoga/*.{cpp,h}'
   
   s.module_name = 'ALYoga'
-  s.requires_arc = false
   s.compiler_flags = [
       '-fno-omit-frame-pointer',
       '-fexceptions',
