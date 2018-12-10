@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ALYoga"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Yoga is a cross-platform layout engine which implements Flexbox."
   s.description      = <<-DESC
                        Yoga is a cross-platform layout engine enabling maximum collaboration within 
@@ -25,8 +25,8 @@ Pod::Spec.new do |s|
   s.platforms = { :ios => "8.0" }
   s.requires_arc = false
 
-  s.public_header_files = 'ALYoga/{Yoga,YGEnums,YGMacros}.h'
-  s.source_files = 'ALYoga/**/*.{h,cpp}'
+  s.public_header_files = 'yoga/{Yoga,YGEnums,YGMacros}.h'
+  s.source_files = 'yoga/**/*.{h,cpp}'
   
   s.module_name = 'yoga'
 
